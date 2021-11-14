@@ -1,0 +1,52 @@
+body {
+    background-color: black;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text {
+    color:chartreuse;
+    animation: blink 2s infinite;
+}
+
+@keyframes blink {
+    100% { color: rgba(34, 34, 34, 0); }
+}
+
+.loading {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.line-box {
+    padding: 2px;
+    width: 40%;
+    height: 20px;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+
+.line{
+    height: 20px;
+    border-radius: 20px;
+    background-color: violet;
+    animation: loading 5s forwards cubic-bezier(0,0,0,0);
+}
+
+@keyframes loading {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;}
+}

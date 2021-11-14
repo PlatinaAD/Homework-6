@@ -1,0 +1,16 @@
+.box {
+    border: 3px solid black;
+    width: 800px;
+}
+
+.white {
+    background-color: rgb(204, 178, 178);
+    width: 100px;
+    height: 100px;
+}
+
+.black {
+    background-color: black;
+    width: 100px;
+    height: 100px;
+}

@@ -1,0 +1,26 @@
+.parent {
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+}
+
+.square {
+    display: inline-block;
+    cursor: pointer;
+    margin: 10px;
+    height: 100px;
+    width: 100px;
+    background-color: red;
+}
+
+.square:hover {
+    background-color: chartreuse;
+}
+
+.square:hover ~ .square:nth-child(1),
+.square:hover ~ .square:nth-child(-n+2),
+.square:hover ~ .square:nth-child(-n+3),
+.square:hover ~ .square:nth-child(-n+4),
+.square:hover ~ .square:nth-child(-n+5) {
+    background-color: chartreuse;
+}
